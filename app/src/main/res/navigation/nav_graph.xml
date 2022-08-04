@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.bottomnavigation.fragment.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_homeDetailsFragment"
+            app:destination="@id/homeDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.bottomnavigation.fragment.explore.ExploreFragment"
+        android:label="Explore"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_exploreFragment_to_exploreDetailsFragment"
+            app:destination="@id/exploreDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.bottomnavigation.fragment.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_profileDetailsFragment"
+            app:destination="@id/profileDetailsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/homeDetailsFragment"
+        android:name="com.bottomnavigation.fragment.home_details.HomeDetailsFragment"
+        tools:layout="@layout/fragment_home_details" />
+
+    <fragment
+        android:id="@+id/exploreDetailsFragment"
+        android:name="com.bottomnavigation.fragment.explore_details.ExploreDetailsFragment"
+        tools:layout="@layout/fragment_explore_details" />
+
+    <fragment
+        android:id="@+id/profileDetailsFragment"
+        android:name="com.bottomnavigation.fragment.profile_details.ProfileDetailsFragment"
+        tools:layout="@layout/fragment_profile_details" />
+
+</navigation>
