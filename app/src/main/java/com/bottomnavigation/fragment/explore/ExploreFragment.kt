@@ -23,6 +23,9 @@ class ExploreFragment : Fragment() {
 
         val btnNextFragment = view.findViewById<AppCompatButton>(R.id.btnNextFragment)
 
+        /**
+         * transition from fragment ExploreFragment on the ExploreDetailsFragment
+         */
         btnNextFragment.setOnClickListener {
             findNavController().navigate(R.id.action_exploreFragment_to_exploreDetailsFragment)
         }

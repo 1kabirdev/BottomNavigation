@@ -24,6 +24,9 @@ class ProfileFragment : Fragment() {
         val btnNextFragment =
             view.findViewById<AppCompatButton>(R.id.btnNextFragment)
 
+        /**
+         * transition from fragment ProfileFragment on the ProfileDetailsFragment
+         */
         btnNextFragment.setOnClickListener {
             findNavController().navigate(R.id.action_profileFragment_to_profileDetailsFragment)
         }

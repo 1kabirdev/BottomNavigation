@@ -23,6 +23,9 @@ class HomeFragment : Fragment() {
 
         val btnNextFragment = view.findViewById<AppCompatButton>(R.id.btnNextFragment)
 
+        /**
+         * transition from fragment HomeFragment on the HomeDetailsFragment
+         */
         btnNextFragment.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_homeDetailsFragment)
         }
